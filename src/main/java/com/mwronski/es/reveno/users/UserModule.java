@@ -8,7 +8,7 @@ import org.reveno.atp.api.Reveno;
 public final class UserModule {
 
     public static void init(Reveno reveno) {
-        reveno.domain().command(NewUserEvent.class, RegisterUserCommand::handle);
+        reveno.domain().command(RegisterUserCommand.class, RegisterUserCommand::handle);
         reveno.domain().transactionAction(NewUserEvent.class, UserRepo::create);
     }
 

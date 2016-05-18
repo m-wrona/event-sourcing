@@ -6,8 +6,8 @@ import org.reveno.atp.api.transaction.TransactionContext;
 public final class UserRepo {
 
     public static void create(NewUserEvent userEvent, TransactionContext ctx) {
-        ctx.repo().store(userEvent.getUser().getId(), userEvent.getUser());
-        ctx.repo().store(userEvent.getUser().getId(), userEvent.getUser());
+        ctx.repo().store(userEvent.getUserId(), userEvent.getUser());
+//        ctx.repo().store(userEvent.getUserId(), userEvent.getUser());
     }
 
     private UserRepo() {
