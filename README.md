@@ -1,2 +1,2 @@
-# event-sourcing
-Samples for CQRS and event-sourcing patterns
+# event-sourcing-reveno
+Samples usage of Reveno lib for CQRS and event-sourcing patterns
